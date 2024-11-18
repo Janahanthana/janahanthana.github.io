@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="personalPortfolioDesign.css"
+    <link rel="stylesheet" href="personalPortfolioDesign.css">
+    <script src="personalPortfolio.js" defer></script>
+</head>
+<body>
 
-  </head>
-
-  <body>
 
 
+    <div class="font">
+        <button onclick="changeFontSize(1)">Increase Font</button>
+        <button onclick="changeFontSize(-1)">Decrease Font</button>
+    </div>
+    
     
     <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
         <ul class="nav nav-pills">
@@ -39,11 +43,33 @@
                     these interests into my work. Through my internships, I've gained valuable experience 
                     and am eager to apply my expertise in technology and business strategy to real-world challenges.</p>
 
-            
+                    <p>Welcome message by Janahan</p>
+
+                    <div class = "audio">
+                      <audio controls>
+                        <source src="welcome.m4a">
+                      </audio>  
+                    </div>
+                    
                     <div class = "button">
                         <a href="#" class="btn">Download Resume</a>
                       </div>
-    
+
+              <div class = "images">     
+                <img src="image1.jpg" alt="Toronto">
+                <img src="IMG_4951.jpg" alt="Basketball">
+                <img src="IMG_5157.jpg" alt="Pittsburg">
+              </div>
+
+
+        <div class="image-item">
+          <button onclick="toggleDescription(2)">Read Description</button>
+          <div class="description" id="desc-2">
+            <p>Picture taken: August 3rd 2023 in Toronto. This a picture of the Toronto city skyline. It is taken at sunset has numerous trees and a park. The sky is filled with colors such as blue and orange giving a reflection on the buildings. The dark green trees are seen closer and below the city followed by the green park</p>
+        </div>
+        </div>
+
+
             </div>
           </section>
           <p> </p>
@@ -100,6 +126,8 @@
         <p> call 123-456-7890</p>
         
       </div>
+
+     
 
   </body>
 </html>
