@@ -1,41 +1,61 @@
-body{
-    background: #1f242d;
+
+
+
+/*About me page spacing */
+
+
+
+
+body {
+    overflow-x: hidden; /* Temporarily hide horizontal overflow */
+    background: #1E1E1E;
+    color: #FFFFFF;
 }
 
-a{
-    color: #fff;
-    text-decoration: none;
+h2 {
+    position: relative; /* Allows precise positioning */
+    left: 60px; /* Move headers further to the right */
+    color: #FFFFFF; /* Ensure visibility */
 }
 
-.home{
+.aboutMe{
     display: flex;
-    align-items: center;
-    height: 100vh;
-    padding: 60px 9% 0;
-    background: #1f242d;
-    color: #fff;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
+    padding: 60px 5%;
+    color: #FFFFFF;
+    gap: 30px;
+    
+   
 
 }
 
-.home-info h1{
-    margin: 10px 200px 0px;
+/*My name as a header */
+.aboutMeInfo{
+    flex: 2;
+    max-width: 60%;
+    margin: 0;
+    color: #FFFFFF;
 }
 
-.home-info h2{
-    margin: 10px 200px 0px;
+
+
+
+.aboutMe img{
+    
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin: 10px 0,20px;
+    width: auto;
+
+    
+    
 }
 
-.home-info p{
-    margin: 10px 200px 0px;
-    width: 900px;
-}
-
-.button{
-    display: flex;
-    align-items: center;
-
-}
-
+/*Download Resume button*/
 .btn{
     display: inline-block;
     padding: 10px 30px;
@@ -44,67 +64,176 @@ a{
     border-radius: 40px;
     box-shadow: 0 0 10px;
     color: #fff;
-    margin: 10px 200px 0px;
+    margin: left;
+    margin-bottom: 10px;
 
 }
 
-.resume{
-    background: #1f242d;
-    color: #fff;
-}
 
-.audio{
-    margin: 10px 200px 0px;
-
-}
-
+/*Increase/Decrease Font buttons allignment*/
 .font{
     margin: 0 10px;
     padding: 10px 20px;
-    background-color: #03fff2;
     border: none;
     border-radius: 5px;
-    color: #1f242d;
     cursor: pointer;
     font-size: 16px;
 }
 
-.images {
-        display: flex; 
-        justify-content: space-around; 
-        margin: 20px 0; 
-    }
-    
-    .images img {
-        width: 20%; 
-        height: auto; 
-        border-radius: 10px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    }
+button {
+        
+    padding: 10px 20px; /*button width/height*/
+    background-color: #7c7373; /*button color*/
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; /*button text*/
+    cursor: pointer;
+}
     
 
-    button {
-        margin-top: 10px;
-        padding: 10px 20px;
-        background-color: #03fff2;
-        border: none;
-        border-radius: 5px;
-        color: #1f242d;
-        cursor: pointer;
-    }
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    color: #000000;
     
-    button:hover {
-        background-color: #029f92;
-        margin-top: 10px;
+  
+}
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+    
+.textBox{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
 
 
-    }
+.left-container{
+    max-width: 1200px;
+    left: 0;
+}
+
+.right-container{
+    max-width: 1200px;
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 80px;
+    border-radius: 80%;
+    right: -40px;
+    top: 32px;
+    z-index: 20;
+}
+
+.right-container img{
+    left: -40px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 94%;
+    background:#ffffff;
+    top: 0;
+    left: 75%;
+    margin-left: -3px;
     
-    .description {
-        display: none; 
-        margin-top: 10px;
-        color: #fff;
-        background-color: #333;
-        padding: 10px;
-        border-radius: 5px;
-    }
+
+}
+
+.textBox h2{
+    font-weight: 600;
+}
+
+.textBox small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+/* Adjust the card size */
+.card {
+  height: 400px; /* Customize card height */
+  width: 100%; /* Ensure cards scale to full column width */
+}
+
+/* Adjust the image inside the card */
+.card img {
+  height: 200px; /* Set the image height */
+  object-fit: cover; /* Ensure the image scales and crops properly */
+}
+
+/* Optional: Ensure text elements fit nicely within the card */
+.card-body {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Add spacing between elements */
+  height: 100%; /* Make sure it uses the full available height */
+}
+
+.project-container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.contact-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    
+}
+
+.formControl {
+    height: 35px; /* Increase height for input fields */
+    font-size: 1.2rem; /* Larger text for better readability */
+    padding: 10px; /* Add padding for comfort */
+  }
+  
+  #comments {
+    height: 200px; /* Increase height for the textarea */
+    font-size: 1.2rem; /* Larger text for better readability */
+    padding: 10px; /* Add padding for comfort */
+  }
+  
+  /* Ensure all fields span the column width */
+  .formControl,
+  #comments {
+    width: 100%;
+  }
+  
+
+
+#aboutMeSection {
+    margin-top: 60px; /* Moves "About Me" header lower */
+ 
+}
+
+#schoolWorkSection {
+    margin-top: 80px; /* Moves "School and Work" header lower */
+}
+
+#projectSection {
+    margin-top: 80px; /* Moves "Projects" header lower */
+}
+
+#contactSection {
+    margin-top: 80px; /* Moves "Contact" header lower */
+}
+
+.fa-linkedin{
+    font-size: 50px;
+}
+
+.audio{
+    margin:auto;
+}
