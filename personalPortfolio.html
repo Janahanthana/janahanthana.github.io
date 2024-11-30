@@ -2,132 +2,217 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name= "viewport" content = "width=device-with, initial-scale=1">
+    <meta name= "description" content = "This webpage is a personal portfolio demonstrating Janahan's skills and projects. Around 150 characters here.">
+    <meta name= "keywords" content = "Personal portfolio, Janahan, Thanabalasinkam, data analyst, Tableau, SQL, python, Power BI, TMU">
+    <meta name= "author" content = "Janahan Thanabalasinkam">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="personalPortfolioDesign.css">
     <script src="personalPortfolio.js" defer></script>
 </head>
+
 <body>
-
-
-
-    <div class="font">
+    
+    <nav id="navbar-example2" class="navbar navbar-expand-lg fixed-top" style= "background-color: aliceblue;">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutMeSection">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#schoolWorkSection">School and Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projectSection">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contactSection">Contact</a>
+        </li>
+      </ul>
+      <div class="ms-auto">
         <button onclick="changeFontSize(1)">Increase Font</button>
         <button onclick="changeFontSize(-1)">Decrease Font</button>
+        <button onclick = "changeColor()"> Change Color </button>
     </div>
-    
-    
-    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading3">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-        <h3 id="scrollspyHeading1">About me</h3>
-        <section class = "home">
-            <div class = "home-info">
-                <h1>Janahan Thanabalasinkam</h1>
-                <h2>Data Analyst</h2>
-                <p> Hey! My name is Janahan I am currently in my final year of undergraduate studies 
-                    in Business Technology Management, where I've had the opportunity to complete three 
-                    internships that have enriched my practical knowledge and skills. My passions lie in 
-                    programming, data analysis, and sports, and I’m constantly seeking ways to integrate 
-                    these interests into my work. Through my internships, I've gained valuable experience 
-                    and am eager to apply my expertise in technology and business strategy to real-world challenges.</p>
+    </nav>
 
-                    <p>Welcome message by Janahan</p>
 
-                    <div class = "audio">
-                      <audio controls>
-                        <source src="welcome.m4a">
-                      </audio>  
-                    </div>
-                    
-                    <div class = "button">
-                        <a href="#" class="btn">Download Resume</a>
-                      </div>
-
-              <div class = "images">     
-                <img src="image1.jpg" alt="Toronto">
-                <img src="IMG_4951.jpg" alt="Basketball">
-                <img src="IMG_5157.jpg" alt="Pittsburg">
+    <div>
+      <h2 id="aboutMeSection">About Me</h2>
+      <div style="height: 100px;"></div>
+      <section class="aboutMe">
+          <div class="aboutMeInfo">
+              <h1>Janahan Thanabalasinkam</h1>
+              <h3>Data Analyst</h3>
+              <p>Hey! My name is Janahan I am currently in my final year of undergraduate studies in Business Technology Management, where I've had the opportunity to complete three internships that have enriched my practical knowledge and skills. My passions lie in programming, data analysis, and sports, and I’m constantly seeking ways to integrate these interests into my work. Through my internships, I've gained valuable experience and am eager to apply my expertise in technology and business strategy to real-world challenges.</p>
+              <div class="button">
+                <a href="Updated Resume 2025 - Janahan Thanabalasinkam.docx" class="btn">Download Resume</a>
+          
+                <div class = "audio">
+                  <audio controls>
+                    <source src="welcome.m4a">
+                  </audio>  
+                  <p>Welcome message by Janahan</p>
+                </div>
               </div>
+          </div>
+          
+          <img src="face.jpg">
 
+          
+      </section>
+    </div>
 
-        <div class="image-item">
-          <button onclick="toggleDescription(2)">Read Description</button>
-          <div class="description" id="desc-2">
-            <p>Picture taken: August 3rd 2023 in Toronto. This a picture of the Toronto city skyline. It is taken at sunset has numerous trees and a park. The sky is filled with colors such as blue and orange giving a reflection on the buildings. The dark green trees are seen closer and below the city followed by the green park</p>
-        </div>
-        </div>
-
-
+      <h2 id="schoolWorkSection">School and Work</h2>
+      <div style="height: 100px;"></div>
+      <section class="schoolWork">
+        <div class="timeline">
+          <div class="container left-container">
+            <img src="lbp.png">
+            <div class="textBox">
+              <h3>Lester B. Pearson CI</h3>
+              <small>September 2016- June 2019</small>
+              <p>Honour Roll Student</p>
+              <p>Ultimate Frisbee Team Captain</p>
             </div>
-          </section>
-          <p> </p>
-          <h3 id="scrollspyHeading2">Resume</h3>
-          <p> </p>
-          <section class = "resume">
-        
+          </div>
+          <div class="container right-container">
+            <img src="tmu.jpg">
+            <div class="textBox">
+              <h3>Toronto Metropolitan University</h3>
+              <small>September 2020 - December 2024</small>
+              <p>Business Technology Management</p>
+              <p>2023/24 Dean's Honour List</p>
+            </div>
+          </div>
+          <div class="container left-container">
+            <img src="bestbuy.png">
+            <div class="textBox">
+              <h3>Best Buy</h3>
+              <small>June 2021 - May 2021</small>
+              <p>Certified Computer Advisor</p>
+            </div>
+          </div>
+          <div class="container right-container">
+            <img src="sportinglife.png">
+            <div class="textBox">
+              <h3>Sporting Life Group</h3>
+              <small>September 2022 - December 2022</small>
+              <p>Operations Intern</p>
+            </div>
+          </div>
+          <div class="container left-container">
+            <img src="Telus.png">
+            <div class="textBox">
+              <h3>TELUS Business Solutions</h3>
+              <small>May 2023 - September 2023</small>
+              <p>Performance Analyst</p>
+            </div>
+          </div>
+          <div class="container right-container">
+            <img src="lactalis.jpg">
+            <div class="textBox">
+              <h3>Lactalis Canada</h3>
+              <small>May 2024 - Present</small>
+              <p>Category Analyst Intern</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+  
+      
+      <h2 id="projectSection">Projects</h2>
+      <div style="height: 100px;"></div>
+      <section>
+        <div class="project-container"> 
+            <div class="col-4"> 
+              <div class="card">
+                <img src="automotive sales.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Automotive Sales Project</h5>
+                  <p class="card-text">Learn about how I used python and mathplotlib to transform Automotive data. I turned raw data into actionable insights.</p>
+                  <a href="https://github.com/Janahant/Automotive-sales-statistics/tree/main" target="_blank" class="btn btn-primary">Learn More!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4"> 
+              <div class="card">
+                <img src="Movies.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Data Visualization via Tableau</h5>
+                  <p class="card-text">Learn about how I created a dashboard via Tableau to demonstrate movie sales before/after recessions. </p>
+                  <a href="https://github.com/Janahant/Data-Visualization" target="_blank" class="btn btn-primary">Learn More!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4"> 
+              <div class="card">
+                <img src="RTA Assignment 5.png" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Video Game design</h5>
+                  <p class="card-text">See how my blue print for a videogame design I created.</p>
+                  <a href="https://github.com/Janahant/Videogame-Design" target="_blank" class="btn btn-primary">Learn More!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
         
-            <h5> Work Experience</h5>
-            <p> Certified Computer Advisor – Best Buy (June 2021 – May 2022)</p>
-            <p> Operations Intern - Sporting Life Group (September 2022 - December 2022) </p>
-            <p> Performance Analyst – TELUS Business Solution (May 2023 – September 2023) </p>
-            <p> Lactalis Canada - Category Insight Analyst (May 2024 - Current) </p>
-            <p> - </p>
-            <p> - </p>
-            <p> - </p>
-            <p> - </p>
-            <p> - </p>
-            <p> - </p>
-            <p> - </p>
-            <p> - </p>
-            <p> - </p>
-            <p>add hyperlink to the resume</p>
-          </section>
+      
+      
+
        
-        <h3 id="scrollspyHeading3">Portfolio</h3>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p>ITM 752 Project </p>
-        <p>ITM 615 Project </p>
-        <p>ITM 200 Project</p>
-        <h3 id="scrollspyHeading4">Contact</h3>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>  
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> - </p>
-        <p> call 123-456-7890</p>
-        
-      </div>
 
-     
+      <h2 id="contactSection">Contact</h2>
+      <div style="height: 100px;"></div>
+      <section>
+        <div class="contact-container">
+         <a href="https://www.linkedin.com/in/janahanthanabalasinkam/">
+          <i class="fa-brands fa-linkedin"></i>
+         </a>
+          <form action="https://api.web3forms.com/submit" method="POST"
+
+            class="row g-4">  
+            <input type="hidden" name="access_key" value="9c0bcc10-bee0-4856-a00a-92271ed1b310">
+      
+            <div class="col-md-6">
+              <label for="firstName" class="formLabel">First Name</label>
+              <input type="text" class="formControl" name="firstName" id="firstName" required placeholder="John">
+            </div>
+
+            <div class="col-md-6">
+              <label for="lastName" class="formLabel">Last Name</label>
+              <input type="text" class="formControl" name="lastName" id="lastName" required placeholder="Doe">
+            </div>
+
+            <div class="col-md-8">
+              <label for="email" class="formLabel">E-mail</label>
+              <input type="email" class="formControl" name="email" id="email" required placeholder="Johndoe@gmail.com">
+            </div>
+
+            <div class="col-md-4">
+              <label for="phoneNumber" class="formLabel">Phone Number</label>
+              <input type="text" class="formControl" name="phoneNumber" id="phoneNumber" placeholder="+1 (416) 979-5000">
+            </div>
+
+            <div class="col-md-12">
+              <label for="comments" class="formLabel">Questions, Comments, Concerns?</label>
+              <textarea class="formControl" name="comments" id="comments" rows="4"></textarea>
+            </div>
+
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+          </form>
+        </div>
+      </section>
+      
+   
 
   </body>
 </html>
