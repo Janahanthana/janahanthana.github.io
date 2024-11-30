@@ -17,3 +17,13 @@ function toggleDescription(imageNumber) {
     }
 }
     
+function changeColor() {
+    const currentColor = document.body.style.backgroundColor;
+
+    if (currentColor === "red") {
+        document.body.style.backgroundColor = ""; 
+    } else {
+        document.body.style.backgroundColor = "red"; 
+    }
+}
+
